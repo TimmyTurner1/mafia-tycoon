@@ -1,0 +1,153 @@
+/* Overall Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222; /* Dark background */
+    color: #ddd; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #00FF00; /* Neon Green */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6600; /* Change on hover */
+}
+
+a:focus, a:active {
+    color: #FF0000; /* Red when focused or clicked */
+}
+
+/* Navbar Styles */
+header {
+    background-color: #111;
+    padding: 15px;
+    color: neon green;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+
+header a {
+    text-decoration: none;
+    color: #00FF00; /* Neon Green */
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: #333;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    padding-top: 20px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+    color: #00FF00;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px; /* To make space for the sidebar */
+    padding: 20px;
+}
+
+.main-content .header {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00FF00; /* Neon Green */
+    border-bottom: 3px solid #333;
+    margin-bottom: 20px;
+}
+
+/* User Stats Panel */
+.stats-panel {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.stats-panel h3 {
+    color: #00FF00;
+    font-size: 24px;
+}
+
+.stats-panel p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+/* Crime Panel (example) */
+.crime-panel {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.crime-panel h3 {
+    color: #ff6600; /* Orange color */
+}
+
+.crime-panel button {
+    padding: 10px;
+    background-color: #00FF00;
+    color: #222;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.crime-panel button:hover {
+    background-color: #00cc00;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
